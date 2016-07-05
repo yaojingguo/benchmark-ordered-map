@@ -1,13 +1,16 @@
-## biogo-llrb
+## Insert
 ```
-BenchmarkInsert-4                      	      10	 112059425 ns/op	 8000102 B/op	  200011 allocs/op
-BenchmarkSortedInsert_ReplaceOrInsert-4	      20	  77309403 ns/op	 8000137 B/op	  200015 allocs/op
-BenchmarkSortedInsert_InsertNoReplace-4	      20	  63493482 ns/op	 8000114 B/op	  200012 allocs/op
-BenchmarkIterate-4                     	     100	  12180202 ns/op	       0 B/op	       0 allocs/op
+Benchmark_biogo-llrb          	      10	 114244675 ns/op	 8000094 B/op	  200009 allocs/op
+Benchmark_google-btree        	      20	  79870534 ns/op	 6812205 B/op	  106923 allocs/op
 ```
-## google-btree
+## Iterate
 ```
-BenchmarkInsert-4                      	      20	  83132392 ns/op	 6812212 B/op	  106924 allocs/op
-BenchmarkSortedInsert_ReplaceOrInsert-4	      30	  53294651 ns/op	 8437277 B/op	  109911 allocs/op
-BenchmarkIterate-4                     	     300	   4356657 ns/op	       0 B/op	       0 allocs/op
+Benchmark_biogo-llrb         	     100	  11149827 ns/op	       0 B/op	       0 allocs/op
+Benchmark_google-btree       	     500	   3823940 ns/op	       0 B/op	       0 allocs/op
+```
+## SortedInsert
+```
+Benchmark_biogo-llrb  	      20	  76805581 ns/op	 8000156 B/op	  200017 allocs/op
+Benchmark_biogo-llrb  	      20	  57199932 ns/op	 8000131 B/op	  200014 allocs/op
+Benchmark_google-btree	      30	  48993372 ns/op	 8437280 B/op	  109911 allocs/op
 ```
